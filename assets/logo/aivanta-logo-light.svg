@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 180" role="img" aria-labelledby="title desc">
+<title id="title">Aivanta</title><desc id="desc">An open book with a rising sun beside the Aivanta wordmark.</desc>
+<g fill="none" stroke="#4B2E83" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+<path d="M28 111 Q94 77 160 111 Q226 77 292 111"/>
+<path d="M45 91 Q105 62 160 91 Q215 62 275 91"/>
+</g>
+<path d="M119 57 A41 41 0 0 1 201 57 L160 79 Z" fill="#D99A3B"/>
+<text x="330" y="91" fill="#1F1B24" font-family="Plus Jakarta Sans,Inter,Arial,sans-serif" font-size="68" font-weight="700" letter-spacing="-2">Aivanta</text>
+<text x="334" y="127" fill="#625B68" font-family="Plus Jakarta Sans,Inter,Arial,sans-serif" font-size="17" letter-spacing=".4">INDEPENDENT OPEN TECHNOLOGY INITIATIVE</text>
+</svg>
