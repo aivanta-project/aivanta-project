@@ -1,0 +1,84 @@
+:root {
+  color-scheme: light;
+  --av-color-plum: #4B2E83;
+  --av-color-indigo: #3F51B5;
+  --av-color-lavender: #C7B6E6;
+  --av-color-ochre: #D99A3B;
+  --av-color-paper: #F8F4EA;
+  --av-color-ink: #1F1B24;
+  --av-color-white: #FFFFFF;
+
+  --av-font-sans: "Plus Jakarta Sans", Inter, ui-sans-serif, system-ui, sans-serif;
+  --av-font-size-xs: .75rem;
+  --av-font-size-sm: .875rem;
+  --av-font-size-base: 1rem;
+  --av-font-size-lg: 1.125rem;
+  --av-font-size-xl: 1.25rem;
+  --av-font-size-2xl: 1.5rem;
+  --av-font-size-3xl: clamp(1.875rem, 4vw, 3rem);
+  --av-font-size-display: clamp(2.5rem, 6vw, 5rem);
+
+  --av-radius-sm: 6px;
+  --av-radius-md: 12px;
+  --av-radius-lg: 20px;
+  --av-radius-pill: 999px;
+
+  --av-space-1: 4px;
+  --av-space-2: 8px;
+  --av-space-3: 12px;
+  --av-space-4: 16px;
+  --av-space-6: 24px;
+  --av-space-8: 32px;
+  --av-space-12: 48px;
+  --av-space-16: 64px;
+  --av-space-20: 80px;
+
+  --av-bg: #F8F4EA;
+  --av-surface: #FFFCF6;
+  --av-surface-raised: #FFFFFF;
+  --av-text: #1F1B24;
+  --av-text-muted: #625B68;
+  --av-border: #E6DED1;
+  --av-primary: #4B2E83;
+  --av-primary-hover: #3D246D;
+  --av-primary-contrast: #FFFFFF;
+  --av-accent: #D99A3B;
+  --av-accent-contrast: #1F1B24;
+  --av-focus: #3F51B5;
+  --av-shadow: 0 8px 28px rgba(31, 27, 36, .08);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --av-bg: #1F1B24;
+  --av-surface: #292331;
+  --av-surface-raised: #332B3B;
+  --av-text: #F8F4EA;
+  --av-text-muted: #D0C5D6;
+  --av-border: #4B4054;
+  --av-primary: #C7B6E6;
+  --av-primary-hover: #D9CDEE;
+  --av-primary-contrast: #1F1B24;
+  --av-accent: #D99A3B;
+  --av-accent-contrast: #1F1B24;
+  --av-focus: #D99A3B;
+  --av-shadow: 0 10px 32px rgba(0, 0, 0, .24);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    color-scheme: dark;
+    --av-bg: #1F1B24;
+    --av-surface: #292331;
+    --av-surface-raised: #332B3B;
+    --av-text: #F8F4EA;
+    --av-text-muted: #D0C5D6;
+    --av-border: #4B4054;
+    --av-primary: #C7B6E6;
+    --av-primary-hover: #D9CDEE;
+    --av-primary-contrast: #1F1B24;
+    --av-accent: #D99A3B;
+    --av-accent-contrast: #1F1B24;
+    --av-focus: #D99A3B;
+  }
+}
