@@ -14,6 +14,7 @@ interface Project {
   linkHref: string;
   isExternal: boolean;
   visualType: "signal" | "agent";
+  projectPageHref?: string;
 }
 
 const PROJECTS: Project[] = [
@@ -28,10 +29,11 @@ const PROJECTS: Project[] = [
     description:
       "An open-source provenance and integrity verification toolkit for information consumed by AI systems.",
     footerTech: "Python · Open source",
-    linkText: "View project ↗",
+    linkText: "GitHub ↗",
     linkHref: "https://github.com/aivanta-project/signaltrace",
     isExternal: true,
     visualType: "signal",
+    projectPageHref: "projects/signaltrace/",
   },
   {
     id: "agent-trust",
@@ -156,18 +158,29 @@ export const ProjectsSection: React.FC = () => {
                 <p>{proj.description}</p>
                 <div className="project-footer">
                   <span>{proj.footerTech}</span>
-                  {proj.isExternal ? (
-                    <a
-                      href={proj.linkHref}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={`${proj.title} GitHub repository`}
-                    >
-                      {proj.linkText}
-                    </a>
-                  ) : (
-                    <a href={proj.linkHref}>{proj.linkText}</a>
-                  )}
+                  <div style={{ display: "flex", gap: "12px", alignItems: "center" }}>
+                    {proj.projectPageHref && (
+                      <a
+                        href={proj.projectPageHref}
+                        style={{ fontWeight: 700 }}
+                        aria-label={`${proj.title} project page`}
+                      >
+                        Project Page →
+                      </a>
+                    )}
+                    {proj.isExternal ? (
+                      <a
+                        href={proj.linkHref}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`${proj.title} GitHub repository`}
+                      >
+                        {proj.linkText}
+                      </a>
+                    ) : (
+                      <a href={proj.linkHref}>{proj.linkText}</a>
+                    )}
+                  </div>
                 </div>
               </div>
             </article>
